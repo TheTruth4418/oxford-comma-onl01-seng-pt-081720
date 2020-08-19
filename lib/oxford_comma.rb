@@ -1,9 +1,5 @@
-require 'pry'
-
 def oxford_comma(array)
-  array.join()
+  last = ", and " << array.pop()
 
-  puts array
-  binding.pry
-  return array
+  return array.join(", ") << last
 end
